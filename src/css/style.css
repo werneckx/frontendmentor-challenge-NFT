@@ -1,0 +1,89 @@
+html {
+    font-family: "Outfit", "Public Sans", sans-serif;
+    font-size: 62.5%;
+
+}
+
+body {
+    background-color: var(--neutral-blue-950);
+    color: white;
+    font-size: 1.4rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    width: 305px;
+    padding: 20px;
+    background-color: var(--neutral-blue-900);
+    border-radius: 10px;
+    box-shadow: 0 0 50px 3px rgba(0, 0, 0, 0.3);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h1{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.card h2{
+    font-size:1.6rem;
+    font-weight: 300;
+    color: var(--primary-blue);
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.card .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card .info p{
+    font-size: 1.4rem;
+}
+
+.card .info .price{
+    color: var(--primary-cyan);
+}
+
+.card .info .days-left{
+    color: var(--primary-blue);
+}
+
+.card .creator{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.card .creator .avatar{
+    width: 30px;
+    object-fit: cover;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+.card .creator p{
+    color: var(--primary-blue);
+}
+
+.card .creator a{
+    color: white;
+}
