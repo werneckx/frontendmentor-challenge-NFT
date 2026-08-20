@@ -25,28 +25,28 @@ main {
     box-shadow: 0 0 50px 3px rgba(0, 0, 0, 0.3);
 }
 
-.card img{
+.card img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
-.card h1{
+.card h1 {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 15px;
     color: white;
 }
 
-.card h2{
-    font-size:1.6rem;
+.card h2 {
+    font-size: 1.6rem;
     font-weight: 300;
     color: var(--primary-blue);
     line-height: 1.5;
     margin-bottom: 18px;
 }
 
-.card .info{
+.card .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,25 +54,52 @@ main {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.card .info p{
+
+.card .info p {
     font-size: 1.4rem;
 }
-
-.card .info .price{
+.card .info .price {
     color: var(--primary-cyan);
+    display: flex;
+    align-items: center;
+    margin: 0;
 }
 
-.card .info .days-left{
+.card .info .price::before {
+    content: '';
+    background: url(../images/icon-ethereum.svg) no-repeat center;
+    width: 11px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.card .info .days-left {
     color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    margin: 0;
 }
 
-.card .creator{
+.card .info .days-left::before {
+    content: '';
+    background: url(../images/icon-clock.svg) no-repeat center;
+    width: 15px;
+    height: 30px;
+    object-fit: contain;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+
+.card .creator {
     display: flex;
     margin-top: 15px;
     align-items: center;
 }
 
-.card .creator .avatar{
+.card .creator .avatar {
     width: 30px;
     object-fit: cover;
     border: 1px solid white;
@@ -80,10 +107,10 @@ main {
     margin: 0 10px 0 0;
 }
 
-.card .creator p{
+.card .creator p {
     color: var(--primary-blue);
 }
 
-.card .creator a{
+.card .creator a {
     color: white;
 }
