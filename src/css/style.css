@@ -62,7 +62,7 @@ main {
     opacity: 1;
 }
 
-.card .image-link img {
+.card .image-link .image {
     width: 100%;
     border-radius: 10px;
 }
